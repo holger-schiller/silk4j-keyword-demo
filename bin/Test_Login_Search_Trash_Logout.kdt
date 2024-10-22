@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyword xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.borland.com/silk/Keyword">
+    <InvokeKeyword name="Start application" />
+    <InvokeKeyword name="100 Login" />
+    <InvokeKeyword name="500 Search Order" />
+    <InvokeKeyword name="600 Trash can Order" />
+    <InvokeKeyword name="700 Logout" />
+    <InvokeKeyword name="Close Application" />
+</Keyword>

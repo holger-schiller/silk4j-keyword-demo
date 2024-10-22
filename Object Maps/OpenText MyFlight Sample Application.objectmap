@@ -1,0 +1,17 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="OpenText MyFlight Sample Application" locator="/WPFNavigationWindow[@caption=&apos;OpenText MyFlight Sample Application&apos;]">
+    <ObjectMapEntry id="1" locator="//WPFComboBox[@automationId=&apos;numOfTickets&apos;]/WPFComboBoxItem[@caption=&apos;1&apos;]"/>
+    <ObjectMapEntry id="agentName" locator="//WPFTextBox[@automationId=&apos;agentName&apos;]"/>
+    <ObjectMapEntry id="datePicker" locator="//WPFDatePicker[@automationId=&apos;datePicker&apos;]"/>
+    <ObjectMapEntry id="Economy" locator="//WPFComboBox[@automationId=&apos;Class&apos;]/WPFComboBoxItem[@caption=&apos;Economy&apos;]"/>
+    <ObjectMapEntry id="FIND FLIGHTS" locator="//WPFButton[@caption=&apos;FIND FLIGHTS&apos;]"/>
+    <ObjectMapEntry id="London" locator="//WPFComboBox[@automationId=&apos;fromCity&apos;]/WPFComboBoxItem[@caption=&apos;London&apos;]"/>
+    <ObjectMapEntry id="okButton" locator="//WPFButton[@automationId=&apos;okButton&apos;]"/>
+    <ObjectMapEntry id="Paris" locator="//WPFComboBox[@automationId=&apos;toCity&apos;]/WPFComboBoxItem[@caption=&apos;Paris&apos;]"/>
+    <ObjectMapEntry id="password" locator="//WPFPasswordBox[@automationId=&apos;password&apos;]"/>
+    <ObjectMapEntry id="ToggleButton" locator="//WPFComboBox[@automationId=&apos;fromCity&apos;]/WPFToggleButton"/>
+    <ObjectMapEntry id="ToggleButton2" locator="//WPFComboBox[@automationId=&apos;toCity&apos;]/WPFToggleButton"/>
+    <ObjectMapEntry id="ToggleButton3" locator="//WPFComboBox[@automationId=&apos;Class&apos;]/WPFToggleButton"/>
+    <ObjectMapEntry id="ToggleButton4" locator="//WPFComboBox[@automationId=&apos;numOfTickets&apos;]/WPFToggleButton"/>
+  </ObjectMapEntry>
+</ObjectMap>

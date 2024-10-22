@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recorderProject version="21.0">
+  <applicationConfiguration>
+    <moduleNamePattern>*\FlightsGUI.exe</moduleNamePattern>
+    <baseStateInfo>
+      <executable>%ProgramFiles(x86)%\OpenText\UFT One\samples\Flights Application\FlightsGUI.exe</executable>
+      <workingDirectory>%ProgramFiles(x86)%\OpenText\UFT One\samples\Flights Application</workingDirectory>
+      <locator>OpenText MyFlight Sample Application</locator>
+    </baseStateInfo>
+  </applicationConfiguration>
+  <agentOptions>
+    <entry>
+      <string>OPT_ASSET_NAMESPACE</string>
+      <string>silk4j.keyword.demo</string>
+    </entry>
+  </agentOptions>
+</recorderProject>
