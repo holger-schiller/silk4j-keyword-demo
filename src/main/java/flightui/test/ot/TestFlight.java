@@ -15,7 +15,9 @@ public class TestFlight {
 	}
 
 	@Keyword(value = "100 Login", description = "Login with username + password")
-	public void login(@Argument("Username") String userName, @Argument("Password") String password) {
+	public void login(
+			@Argument("Username") String userName, 
+			@Argument("Password") String password) {
 		// Todo
 		// userName = "john", passWord = "hp"
 		//desktop.<WPFNavigationWindow>find("OpenText MyFlight Sample Application").setActive();
@@ -26,36 +28,53 @@ public class TestFlight {
 		//desktop.<WPFButton>find("OpenText MyFlight Sample Application.okButton").select();
 	}
 
-	@Keyword(value = "200 Book Flight", description = "book a flight - from, to, class, no. tickets, passenger name, flight date")
-	public void book_Flight(@Argument("FlyFrom") String flyFrom, @Argument("FlyTo") String flyTo,
-			@Argument("ClassOfService") String classOfService, @Argument("Tickets") String tickets,
-			@Argument("PassengerName") String passengerName, @Argument("SelectedRow") String selectedRow,
-			@Argument("OrderDate") String orderDate, @Argument("OrderNumberOut") OutParameter orderNumberOut,
+	@Keyword(value = "200 Book Flight", description = "book a flight - from, to, class, no. tickets, passenger name, flight date, out: order no., passenger name, flight date")
+	public void book_Flight(
+			@Argument("FlyFrom") String flyFrom,
+			@Argument("FlyTo") String flyTo,
+			@Argument("ClassOfService") String classOfService, 
+			@Argument("Tickets") String tickets,
+			@Argument("PassengerName") String passengerName, 
+			@Argument("SelectedRow") String selectedRow,
+			@Argument("OrderDate") String orderDate, 
+			@Argument("OrderNumberOut") OutParameter orderNumberOut,
 			@Argument("PassengerNameOut") OutParameter passengerNameOut,
 			@Argument("OrderDateOut") OutParameter orderDateOut) {
 		// Todo
 		// flyFrom = "London", flyTo = "Paris", classOfService = "Economie"
 		// tickets = "1", passengerName = "John Doe", selectedRow = "0"
 		// orderDate = "19-Dec-2024"
+		// dummy output for development purpose
+		orderNumberOut.setValue("4711");
+		passengerNameOut.setValue("John");
+		orderDateOut.setValue("19-Dec-2024");
 	}
 
 	@Keyword(value = "300 Change Order", description = "change order - no. tickets, class, passenger name, out: updated flight no.")
-	public void change_Order(@Argument("Tickets") String tickets, @Argument("ClassOfService") String classOfService,
+	public void change_Order(
+			@Argument("Tickets") String tickets, 
+			@Argument("ClassOfService") String classOfService,
 			@Argument("PassengerName") String passengerName,
 			@Argument("UpdatedOrderNum") OutParameter updatedOrderNum) {
 		// Todo
 		// tickets = "2", classOfService = "First", passengerName = "John Deer"
+		// dummy value for development
+		updatedOrderNum.setValue("0815");
 	}
 
 	@Keyword(value = "400 Delete Order Num", description = "delete flight order - no. flight order, passenger name, flight date")
-	public void deleteOrderNum(@Argument("OrderNumber") String orderNumber,
-			@Argument("PassengerName") String passengerName, @Argument("OrderDate") String orderDate) {
+	public void deleteOrderNum(
+			@Argument("OrderNumber") String orderNumber,
+			@Argument("PassengerName") String passengerName, 
+			@Argument("OrderDate") String orderDate) {
 		// Todo
 	}
 
 	@Keyword(value = "500 Search Order", description = "search order - no. flight order, passenger name, flight date")
-	public void searchOrder(@Argument("OrderNumber") String orderNumber,
-			@Argument("PassengerName") String passengerName, @Argument("OrderDate") String orderDate) {
+	public void searchOrder(
+			@Argument("OrderNumber") String orderNumber,
+			@Argument("PassengerName") String passengerName, 
+			@Argument("OrderDate") String orderDate) {
 		// Todo
 		// passengerName = "John"
 	}
@@ -63,6 +82,8 @@ public class TestFlight {
 	@Keyword(value = "600 Trash can Order", description = "trash order - out: no. flight order")
 	public void trashCanOrder(@Argument("OrderDeleteNumber") OutParameter orderDeletedNumber) {
 		// Todo
+		// dummy value for developing
+		orderDeletedNumber.setValue("4711");
 	}
 
 	@Keyword(value = "700 Logout", description = "logout")

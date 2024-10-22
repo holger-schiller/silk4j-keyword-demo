@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyword xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.borland.com/silk/Keyword">
+<Description>I as user,
+want to perform searching a flight order and changing the flight order
+to validate the correct flow.</Description>
     <InvokeKeyword name="Start application" />
     <InvokeKeyword name="100 Login" />
     <InvokeKeyword name="SearchOrder_ChangeOrder" />

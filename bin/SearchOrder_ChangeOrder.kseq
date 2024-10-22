@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyword xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.borland.com/silk/Keyword">
     <Description>Search + Change Order</Description>
-    <InvokeKeyword name="500 Search Order" />
+    <Argument name="changeUpdatedOrderNumber" out="true" />
+    <Argument name="bookOrderNumber" />
+    <Argument name="bookPassengerName" />
+    <Argument name="bookOrderDate" />
+    <InvokeKeyword name="500 Search Order">
+        <Argument value="${bookOrderNumber}" />
+        <Argument value="${bookPassengerName}" />
+        <Argument value="${bookOrderDate}" />
+    </InvokeKeyword>
     <InvokeKeyword name="300 Change Order" />
 </Keyword>
